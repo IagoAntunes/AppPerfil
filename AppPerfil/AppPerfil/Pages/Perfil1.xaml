@@ -6,10 +6,9 @@
     
     
     <ContentPage.Content>
-
-        <StackLayout Spacing="0">
-
-            <RelativeLayout  VerticalOptions="Start" HeightRequest="300" BackgroundColor="White">
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <RelativeLayout  VerticalOptions="Start" HeightRequest="300" BackgroundColor="White">
                 <Image Source="FundoApp.png"
                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
                        Property=Width,Factor=1}"
@@ -28,33 +27,34 @@
                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=Perfil,
                         Property=Y,Factor=1,Constant=180}"/>
 
-            </RelativeLayout>
+                </RelativeLayout>
 
-            <Grid HeightRequest="120" BackgroundColor="#0D1F2D">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                <Grid HeightRequest="120" BackgroundColor="#0D1F2D">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
 
-                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Label Text="18" TextColor="White" FontSize="28"/>
-                    <Label Text="Anos" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
-                </StackLayout>
-                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Label Text="19/01/2000" TextColor="White" FontSize="28"/>
-                    <Label Text="Anos" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
-                </StackLayout>
-            </Grid>
+                        <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Label Text="18" TextColor="White" FontSize="28"/>
+                        <Label Text="Anos" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Label Text="19/01/2000" TextColor="White" FontSize="28"/>
+                        <Label Text="Anos" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Grid>
             
-            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" Padding="30">
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" Padding="30">
                 <Label FontSize="15" Padding="20" TextColor="Black" Text="William Henry Gates III, mais conhecido como Bill Gates, é um magnata, empresário, diretor executivo,
                        investidor, filantropo e autor americano, que ficou conhecido por fundar, junto com Paul Allen a Microsoft,
                        a maior e mais conhecida empresa de software do mundo em termos de valor de mercado."/>
             </StackLayout>
             
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

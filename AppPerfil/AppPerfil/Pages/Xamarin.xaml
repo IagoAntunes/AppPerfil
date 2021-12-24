@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPerfil.Pages.Xamarin">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="0">
+            <StackLayout Padding="30" BackgroundColor="#FFC926">
+                <Image HorizontalOptions="Center" VerticalOptions="Center" Source="LogoApp" WidthRequest="120"/>
+            </StackLayout>
+            <StackLayout HeightRequest="100" Background="#0D1F2D" Padding="30">
+                <Label Text="Xamarin" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontSize="40" BackgroundColor="Green"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="30">
+                <RelativeLayout HorizontalOptions="FillAndExpand" WidthRequest="10">
+                    <BoxView BackgroundColor="#0D1F2D" WidthRequest="50" HeightRequest="50" x:Name="Box1"/>
+                    <BoxView BackgroundColor="#25567E" WidthRequest="50" HeightRequest="50" x:Name="Box2"
+                             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,
+                                ElementName=Box1,Property=X,Factor=1,Constant=12}"
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
+                                ElementName=Box1,Property=Y,Factor=1,Constant=12}"/>
+                    <BoxView BackgroundColor="#4E93CB" WidthRequest="50" HeightRequest="50"  
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,
+                            ElementName=Box2,Property=X,Factor=1,Constant=12}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
+                            ElementName=Box2,Property=Y,Factor=1,Constant=12}"/>
+                </RelativeLayout>
+                
+                <Label Text="Empresa" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" FontSize="40"/>
+            </StackLayout>
+            <StackLayout Padding="30">
+                <Label FontSize="20"
+                        Text="Xamarin is a Microsoft-owned San Francisco-based software company founded in May 2011 by the engineers
+                       that created Mono,Xamarin.Android (formerly Mono for Android) and Xamarin.iOS (formerly MonoTouch)" />
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
