@@ -18,7 +18,8 @@ namespace AppPerfil.Master
         }
         private void GoPaginaPerfil1(Object sender,EventArgs args)
         {
-            Navigation.PushAsync(new Pages.Perfil1());
+            Detail = new NavigationPage(new Pages.Perfil1());
+            IsPresented = false;
         }
         private void GoPaginaXamarin(Object sender, EventArgs args)
         {

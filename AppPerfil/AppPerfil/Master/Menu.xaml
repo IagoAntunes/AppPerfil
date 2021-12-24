@@ -13,10 +13,10 @@
 
                 </StackLayout>
                 <StackLayout Spacing="50">
-                    <Button Text="Miguel de Icaza" FontSize="28" TextColor="White" BackgroundColor="Transparent" Clicked="GoPaginaPerfil1"/>
-                    <Button Text="Joseph Hill" FontSize="28" TextColor="White" BackgroundColor="Transparent"/>
-                    <Button Text="Nat Friedman" FontSize="28" TextColor="White" BackgroundColor="Transparent"/>
-                    <Button Text="Sobre" FontSize="28" TextColor="White" BackgroundColor="Transparent" Clicked="GoPaginaXamarin"/>
+                    <Button Text="Miguel de Icaza" FontSize="24" TextColor="White" BackgroundColor="Transparent" Clicked="GoPaginaPerfil1"/>
+                    <Button Text="Joseph Hill" FontSize="24" TextColor="White" BackgroundColor="Transparent"/>
+                    <Button Text="Nat Friedman" FontSize="24" TextColor="White" BackgroundColor="Transparent"/>
+                    <Button Text="Sobre" FontSize="24" TextColor="White" BackgroundColor="Transparent" Clicked="GoPaginaXamarin"/>
                 </StackLayout>
             </StackLayout>
         </ContentPage>

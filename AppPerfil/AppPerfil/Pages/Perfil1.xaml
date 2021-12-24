@@ -2,11 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPerfil.Pages.Perfil1">
+    
+    
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout Spacing="0">
+
+            <RelativeLayout  VerticalOptions="Start" HeightRequest="300" BackgroundColor="#FFC926">
+
+            </RelativeLayout>
+
+            <Grid HeightRequest="120" BackgroundColor="#0D1F2D">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="18" TextColor="White" FontSize="28"/>
+                    <Label Text="Anos" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="19/01/2000" TextColor="White" FontSize="28"/>
+                    <Label Text="Anos" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Grid>
+            
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" Padding="30">
+                <Label FontSize="15" Padding="20" TextColor="Black" Text="William Henry Gates III, mais conhecido como Bill Gates, é um magnata, empresário, diretor executivo,
+                       investidor, filantropo e autor americano, que ficou conhecido por fundar, junto com Paul Allen a Microsoft,
+                       a maior e mais conhecida empresa de software do mundo em termos de valor de mercado."/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
